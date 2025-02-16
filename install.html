@@ -5,42 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instalación | AlyaBot</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-    <header>
+    <!-- Botón de menú para móviles -->
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <div class="sidebar" id="sidebar">
         <img src="assets/logo.jpeg" alt="Logo de AlyaBot">
-        <h1>Guía de Instalación</h1>
-    </header>
+        <h2>AlyaBot</h2>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="install.html">Instalación</a>
+            <a href="index.html#comandos">Comandos</a>
+            <a href="index.html#funcionalidades">Funcionalidades</a>
+            <a href="index.html#descargas">Descargas</a>
+        </nav>
+        <button id="github">📂 GitHub</button>
+        <button id="descargar">⬇ Descargar</button>
+    </div>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="install.html">Instalación</a>
-        <a href="index.html#comandos">Comandos</a>
-        <a href="index.html#funcionalidades">Funcionalidades</a>
-        <a href="index.html#descargas">Descargas</a>
-    </nav>
+    <div class="content">
+        <section id="instalacion">
+            <h2>Guía de Instalación</h2>
+            <p>Aquí aprenderás cómo instalar y configurar AlyaBot en tu servidor.</p>
 
-    <section>
-        <h2>Cómo instalar AlyaBot</h2>
-        <p>Sigue estos pasos para instalar AlyaBot en tu sistema:</p>
-        
-        <h3>1. Clonar el repositorio</h3>
-        <pre><code>git clone https://github.com/Elpapiema/AlyaBot_MD.git</code></pre>
+            <h3>📌 Requisitos</h3>
+            <ul>
+                <li>Node.js 18 o superior</li>
+                <li>Yarn o npm</li>
+                <li>Git</li>
+                <li>FFmpeg e ImageMagick</li>
+            </ul>
 
-        <h3>2. Instalar dependencias</h3>
-        <pre><code>cd AlyaBot_MD && npm install</code></pre>
+            <h3>🔹 Instalación en Linux</h3>
+            <pre><code>
+git clone https://github.com/Elpapiema/AlyaBot_MD.git
+cd AlyaBot_MD
+yarn install
+            </code></pre>
 
-        <h3>3. Configurar el bot</h3>
-        <p>Debes configurar las credenciales en el archivo <code>.env</code> y escanear el código QR.</p>
+            <h3>🔹 Instalación en Windows</h3>
+            <pre><code>
+git clone https://github.com/Elpapiema/AlyaBot_MD.git
+cd AlyaBot_MD
+npm install
+            </code></pre>
 
-        <h3>4. Iniciar el bot</h3>
-        <pre><code>npm start</code></pre>
-    </section>
+            <h3>🚀 Ejecución</h3>
+            <pre><code>
+node index.js
+            </code></pre>
 
-    <footer>
-        <p>&copy; 2025 AlyaBot. Todos los derechos reservados.</p>
-    </footer>
+            <p>¡Y listo! Tu bot estará corriendo en WhatsApp.</p>
+        </section>
+    </div>
 
 </body>
 </html>

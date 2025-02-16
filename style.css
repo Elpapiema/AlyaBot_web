@@ -8,6 +8,23 @@ body {
     margin: 0;
 }
 
+/* Estilos del botón de menú */
+.menu-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: #0ff;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px cyan;
+}
+
+/* Menú lateral */
 .sidebar {
     width: 250px;
     background-color: #1a1a1a;
@@ -16,6 +33,12 @@ body {
     height: 100vh;
     box-shadow: 4px 0px 10px rgba(0, 255, 255, 0.2);
     text-align: center;
+    left: -260px; /* Oculto por defecto */
+    transition: 0.3s ease-in-out;
+}
+
+.sidebar.show {
+    left: 0;
 }
 
 .sidebar img {
@@ -65,15 +88,15 @@ body {
     box-shadow: 0px 0px 10px cyan;
 }
 
+/* Ajuste para el contenido */
 .content {
     margin-left: 270px;
     padding: 20px;
 }
 
-section {
-    margin: 50px 0;
-    padding: 20px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+/* Para móviles */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+    }
 }

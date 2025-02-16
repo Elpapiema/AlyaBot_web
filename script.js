@@ -1,3 +1,7 @@
+document.getElementById('menu-toggle').addEventListener('click', function () {
+    document.getElementById('sidebar').classList.toggle('show');
+});
+
 document.getElementById('github').addEventListener('click', function() {
     window.open('https://github.com/Elpapiema/AlyaBot_MD', '_blank');
 });

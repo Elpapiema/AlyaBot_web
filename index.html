@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentación | AlyaBot</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="collaborators.css">
     <script defer src="script.js"></script>
+    <script defer src="collaborators.js"></script>
 </head>
 <body>
 
-    <div class="sidebar">
+    <!-- Botón de menú para móviles -->
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <div class="sidebar" id="sidebar">
         <img src="assets/logo.jpeg" alt="Logo de AlyaBot">
         <h2>AlyaBot</h2>
         <nav>
             <a href="#inicio">Inicio</a>
             <a href="install.html">Instalación</a>
-            <a href="#comandos">Comandos</a>
-            <a href="#funcionalidades">Funcionalidades</a>
-            <a href="#descargas">Descargas</a>
+            <a href="comandos.html">Comandos</a>
+            <a href="faq.html">Preguntas Frecuentes</a>
+            <a href="descargas.html">Descargas</a>
         </nav>
         <button id="github">📂 GitHub</button>
         <button id="descargar">⬇ Descargar</button>
@@ -28,20 +33,11 @@
             <h2>Bienvenido a la documentación de AlyaBot</h2>
             <p>AlyaBot es un bot de WhatsApp desarrollado con Baileys, ofreciendo múltiples funcionalidades y personalización.</p>
         </section>
-
-        <section id="comandos">
-            <h2>Lista de Comandos</h2>
-            <p>Aquí irá la lista de comandos del bot.</p>
-        </section>
-
-        <section id="funcionalidades">
-            <h2>Funcionalidades</h2>
-            <p>Explicación de lo que puede hacer el bot.</p>
-        </section>
-
-        <section id="descargas">
-            <h2>Descargas</h2>
-            <p>Puedes descargar AlyaBot o visitar su código en GitHub.</p>
+        <section id="collaborators">
+            <h2>🌟 Colaboradores del Proyecto</h2>
+            <div class="collaborators-container" id="collaborators-container">
+                <!-- Aquí se cargarán automáticamente los colaboradores -->
+            </div>
         </section>
     </div>
 
